@@ -1,4 +1,4 @@
-var dirs = ['gifs', 'bukkit-gifs'],
+var dirs = ['gifs/default'],
 	OUTPUT_FILE = 'index.html',
 	FALLBACK_STYLE_FILE = 'dist/fallback.css',
 	TEMPLATE_FILE = 'templates/index.ejs',
