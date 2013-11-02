@@ -18,7 +18,7 @@ dirs.forEach(function( dir ) {
 		if( files[ j ].match( /.(gif)/ ) ) { // |jpg|jpeg|png
 			url = dir + '/' + files[ j ];
 
-			template.push( '<a href="#' + HASH_PREFIX + counter + '" class="gifparty" id="' + HASH_PREFIX + ( counter - 1 ) + '">' );
+			template.push( '<a href="#' + HASH_PREFIX + counter + '" class="gifparty' + ( counter === 1 ? ' default' : '' ) + '" id="' + HASH_PREFIX + ( counter - 1 ) + '">' );
 			template.push( '<img src="" rel:animated_src="' + url + '" rel:auto_play="1" />' );
 			template.push( '</a>' );
 

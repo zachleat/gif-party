@@ -40,3 +40,16 @@ img.inserted {
 	-webkit-background-size: contain;
 	background-size: contain;
 }
+.targetless-link {
+	font-size: 200%;
+	text-align: center;
+	color: #fff;
+	padding-top: 3em;
+}
+.targetless-link:link,
+.targetless-link:visited {
+	color: #fff;
+}
+.gifparty:target + .targetless-link {
+	display: none;
+}
